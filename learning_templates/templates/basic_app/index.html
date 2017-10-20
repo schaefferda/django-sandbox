@@ -1,0 +1,8 @@
+{% load my_extras %}
+{% extends "basic_app/base.html" %}
+	{% block body_block %}
+		<h1>Welcome to Index</h1>
+		<h2>This index page is inherited!</h2>
+		<h3>{{ text|cut:'world' }}</h3>
+		<h3>{{ number|add:'99' }}</h3>
+	{% endblock %}
